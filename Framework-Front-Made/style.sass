@@ -1,0 +1,787 @@
+$responsive: 768px
+$responsiveBis :992px
+@import "mixin" 
+.container
+	@include background-color(#BDBDBD)
+	@include display(flex)
+	@include margin(8px)
+.container-fluid
+	@include width(100%)
+	@include background-color(#BDBDBD)
+.col-md-1
+	@include float(left)
+	@include width(8.33%)
+	@include background-color(#BDBDBD)
+.col-md-2
+	@include float(left)
+	@include width(16.33%)
+	@include background-color(#BDBDBD)
+.col-md-3
+	@include float(left)
+	@include width(25%)
+	@include background-color(#BDBDBD)
+.col-md-4
+	@include float(left)
+	@include width(33.33%)
+	@include background-color(#BDBDBD)
+.col-md-5
+	@include float(left)
+	@include width(43.83%)
+	@include background-color(#BDBDBD)
+.col-md-6
+	@include float(left)
+	@include width(50%)
+	@include background-color(#BDBDBD)
+.col-md-7
+	@include float(left)
+	@include width(56.17%)
+	@include background-color(#BDBDBD)
+.col-md-8
+	@include float(left)
+	@include width(66.66%)
+	@include background-color(#BDBDBD)
+.col-md-9
+	@include float(left)
+	@include width(75%)
+	@include background-color(#BDBDBD)
+.col-md-10
+	@include float(left)
+	@include width(83.67%)
+	@include background-color(#BDBDBD)
+.col-md-11
+	@include float(left)
+	@include width(91.67%)
+	@include background-color(#BDBDBD)
+.col-md-12
+	@include float(left)
+	@include width(100%)
+	@include background-color(#BDBDBD)
+.col-md-offset-1
+	@include margin-left(8.33%)
+.col-md-offset-2
+	@include margin-left(16.33%)
+.col-md-offset-3
+	@include margin-left(25%)
+.col-md-offset-4
+	@include margin-left(33.33%)
+.col-md-offset-5
+	@include margin-left(43.83%)
+.col-md-offset-6
+	@include margin-left(50%)
+.col-md-offset-7
+	@include margin-left(56.17%)
+.col-md-offset-8
+	@include margin-left(66.66%)
+.col-md-offset-9
+	@include margin-left(75%)
+.col-md-offset-10
+	@include margin-left(83.67%)
+.col-md-offset-11
+	@include margin-left(91.67%)
+.col-md-offset-12
+	@include margin-left(100%)
+.btn-default
+	@include width(70px)
+	@include height(35px)
+	@include background-color(#fff)
+	@include border(1px solid #848484)
+	@include border-radius(5px)
+	@include cursor(pointer)
+.btn-default:hover
+	@include background-color(#D8D8D8)
+
+.btn-primary
+	@include width(70px)
+	@include height(35px)
+	@include background-color(#0431B4)
+	@include border(1px solid #0431B4)
+	@include color(#fff)
+	@include border-radius(5px)
+	@include cursor(pointer)
+.btn-primary:hover
+	@include background-color(#08298A)
+
+.btn-success
+	@include width(70px)
+	@include height(35px)
+	@include background-color(#31B404)
+	@include border(1px solid #31B404)
+	@include color(#fff)
+	@include border-radius(5px)
+	@include cursor(pointer)
+.btn-success:hover
+	@include background-color(#298A08)
+
+.btn-info
+	@include width(70px)
+	@include height(35px)
+	@include background-color(#2ECCFA)
+	@include border(1px solid #2ECCFA)
+	@include color(#fff)
+	@include border-radius(5px)
+	@include cursor(pointer)
+.btn-info:hover
+	@include background-color(#00BFFF)
+
+.btn-warning
+	@include width(70px)
+	@include height(35px)
+	@include background-color(#DBA901)
+	@include border(1px solid #DBA901)
+	@include color(#fff)
+	@include border-radius(5px)
+	@include cursor(pointer)
+.btn-warning:hover
+	@include background-color(#B18904)
+
+.btn-danger
+	@include width(70px)
+	@include height(35px)
+	@include background-color(#DF0101)
+	@include border(1px solid #DF0101)
+	@include color(#fff)
+	@include border-radius(5px)
+	@include cursor(pointer)
+.btn-danger:hover
+	@include background-color(#B40404)
+
+.btn-link
+	@include width(70px)
+	@include height(35px)
+	@include background(none)
+	@include border(none)
+	@include color(#2E64FE)
+	@include border-radius(5px)
+	@include cursor(pointer)
+.btn-link:hover
+	@include text-decoration(underline #2E64FE)
+
+.btn-large
+	@include height(45px)
+	@include width(120px)
+.btn-small
+	@include height(35px)
+	@include width(95px)
+	@include font-size(10px)
+.btn-xSmall
+	@include height(25px)
+	@include width(105px)
+	@include font-size(10px)
+.img-responsive
+	@include width(100%)
+	@include height(auto)
+.img-rounded
+	@include height(140px)
+	@include width(140px)
+	@include border-radius(5px)	
+.img-circle
+	@include height(140px)
+	@include width(140px)
+	@include border-radius(140px)	
+.img-thumbnail
+	@include height(140px)
+	@include width(140px)
+	@include border(1px solid #A4A4A4)
+	@include padding(5px)
+	@include border-radius(5px)	
+.img-blur
+	@include height(140px)
+	@include width(140px)
+	@include filter(blur(4px))
+.text-muted
+	@include color(#6E6E6E)
+
+.text-primary
+	@include color(#0431B4)
+.text-success
+	@include color(#31B404)
+.text-info
+	@include color(#2ECCFA)
+
+.text-warning
+	@include color(#DBA901)
+.text-error
+	@include color(#DF0101)
+.text-magic
+	@include color(#642EFE)
+.bg-primary
+	@include background-color(#0431B4)
+	@include color(#fff)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.bg-success
+	@include background-color(#82FA58)
+	@include opacity(0.8)
+	@include color(#000)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.bg-info
+	@include background-color(#81DAF5)
+	@include opacity(0.8)
+	@include color(#000)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.bg-warning
+	@include background-color(#F4FA58)
+	@include opacity(0.8)
+	@include color(#000)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.bg-error
+	@include background-color(#FE2E2E)
+	@include opacity(0.8)
+	@include color(#000)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.bg-magic
+	@include background-color(#8258FA)
+	@include opacity(0.8)
+	@include color(#000)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.alert-success
+	@include background-color(#82FA58)
+	@include color(#088A08)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+	@include margin(8px)
+.alert-primary
+	@include background-color(#0431B4)
+	@include color(#fff)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+	@include margin(8px)
+.alert-info
+	@include background-color(#81DAF5)
+	@include color(#2E9AFE)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+	@include margin(8px)
+.alert-warning
+	@include background-color(#FE9A2E)
+	@include color(#B45F04)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+	@include margin(8px)
+.alert-error
+	@include background-color(#FE2E2E)
+	@include color(#8A0808)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+	@include margin(8px)
+.alert-magic
+	@include background-color(#8258FA)
+	@include color(#29088A)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+	@include margin(8px)
+.hidden-lg
+	@media(min-width:1200px)
+		@include visibility(hidden)
+.hidden-md
+	@media (min-width:991.9px) and (max-width: 1200px)
+		@include visibility(hidden)
+.hidden-sm
+	@media (min-width:767.9px) and (max-width: 992px)
+		@include visibility(hidden)
+.hidden-xs
+	@media (max-width:767.9px)
+		@include visibility(hidden)
+.visibility-lg
+	@media(min-width:1200px)
+		@include visibility(visible)
+.visibility-md
+	@media (min-width:991.9px) and (max-width: 1200px)
+		@include visibility(visible)
+.visibility-sm
+	@media (min-width:767.9px) and (max-width: 992px)
+		@include visibility(visible)
+.visibility-xs
+	@media (max-width:767.9px)
+		@include visibility(visible)
+.visibilityPrint
+	@include visibility(visible)
+.hiddenPrint
+	@include visibility(hidden)
+.navbar-default
+	@include background-color(#2E2E2E)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.menu
+	@include list-style-type(none)
+	@include display(flex)
+	
+.menu li a
+	@include color(#D8D8D8)
+	@include text-decoration(none)
+	@include padding-left(40px)
+.menu li a:hover
+	@include color(#BDBDBD)
+.navbar-blue
+	@include background-color(#0040FF)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.navbar-red
+	@include background-color(#FF0000)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.navbar-purple
+	@include background-color(#642EFE)
+	@include padding-top(10px)
+	@include padding-bottom(10px)
+.button
+	@include display(none)
+.buttonBlue
+	@include display(none)
+.buttonRed
+	@include display(none)
+.buttonPurple
+	@include display(none)
+.selecteur
+	@include background(none)
+	@include border(none)
+	@include color(#D8D8D8)
+	@include margin-left(20px)
+	@include cursor(pointer)
+.selecteur a
+	@include text-decoration(none)
+.selectMenu
+	@include list-style-type(none)
+	@include display(none)
+.buttondropdownDefault
+	@include display(none)
+.buttondropdownBlue
+	@include display(none)
+.buttondropdownRed
+	@include display(none)
+.buttondropdownPurple
+	@include display(none)
+.window
+	@include width(100%)
+	@include height(100%)
+	@include position(fixed)
+	@include z-index(10)
+	@include background-color(rgba(0,0,0,0.4))
+	@include top(0)
+	@include left(0)
+	@include display(none)
+.modal
+	@include width(45%)
+	@include height(auto)
+	@include margin-top(-50px)
+	@include background-color(#fff)
+	@include position(absolute)
+	@include top(30%)
+	@include left(27%)
+	@include border-radius(5px)
+.modal h1
+	@include margin-left(20px)
+.modal h2
+	@include margin-left(20px)
+.modal h3
+	@include margin-left(20px)
+.modal h4
+	@include margin-left(20px)
+.modal h5
+	@include margin-left(20px)
+.modal h6
+	@include margin-left(20px)
+.modal p
+	@include margin-left(20px)
+.modal a
+	@include margin-left(20px)
+.poppin-dismiss
+	@include float(right)
+.active:hover
+	@include opacity(1)
+.active:focus
+	@include opacity(1)
+.disabled
+	@include cursor(not-allowed)
+	@include opacity(0.4)
+.search
+	@include margin-left(30px)
+.form-control
+	@include height(20px)
+	@include border-radius(5px)
+.form-control:focus
+	@include border(3px solid #81BEF7)
+.title
+	@include float(left)
+	@include color(#fff)
+	@include text-decoration(none)
+	@include font-size(25px)
+	@include padding(10px)
+.title-img
+	@include float(left)
+	@include height(40px)
+	@include width(40px)
+	@include padding(10px)
+.tab-list
+	@include display(none)
+.tab-list li
+	@include position(relative)
+	@include float(left)
+	@include list-style-type(none)
+	@include padding(2px 5px 7px)
+	@include margin-left(2px)
+	@include border(1px solid #BDBDBD)
+	@include cursor(pointer)
+	@include background-color(#fff)
+	@include color(#0D5995)
+	@include z-index(1)
+	@include cursor(pointer)
+.tab-list .actif
+	@include border-bottom(none)
+.tab-pane
+	@include position(relative)
+	@include margin(0px 20px)
+	@include padding(10px)
+	@include border(1px solid #BDBDBD)
+	@include z-index(5)
+	@include top(-6px)
+	@include background-color(#EEEEEE)
+	@include color(#000)
+	@include width(500px)
+	@include overflow(hidden)
+	@include border-radius(5px)
+	@include margin-top(60px)
+	@include margin-left(45px)
+	@include width(40%)
+.close-success
+	@include background-color(#82FA58)
+	@include color(#088A08)
+	@include border(1px solid #82FA58)
+	@include cursor(pointer)
+	@include float(right)
+.close-primary
+	@include background-color(#0431B4)
+	@include color(#fff)
+	@include border(1px solid #0431B4)
+	@include cursor(pointer)
+	@include float(right)
+.close-info
+	@include background-color(#81DAF5)
+	@include color(#2E9AFE)
+	@include border(1px solid #81DAF5)
+	@include cursor(pointer)
+	@include float(right)
+.close-warning
+	@include background-color(#FE9A2E)
+	@include color(#B45F04)
+	@include border(1px solid #FE9A2E)
+	@include cursor(pointer)
+	@include float(right)
+.close-error
+	@include background-color(#FE2E2E)
+	@include color(#8A0808)
+	@include border(1px solid #FE2E2E)
+	@include cursor(pointer)
+	@include float(right)
+.close-magic
+	@include background-color(#8258FA)
+	@include color(#29088A)
+	@include border(1px solid #8258FA)
+	@include cursor(pointer)
+	@include float(right)
+.infobulle
+	@include position(absolute)
+	@include background-color(#1C1C1C)
+	@include padding(3px 7px)
+	@include border-radius(5px)
+	@include color(#fff)
+.carrousel
+	@include width(1248px)
+	@include height(464px)
+	@include position(relative)
+	@include overflow(hidden)
+	@include border-radius(10px)
+	@include margin-left(80px)
+.slide
+	@include position(absolute)
+	@include top(0)
+	@include left(0)
+	@include width(712px)
+	@include height(264px)
+.pagination
+	@include position(absolute)
+	@include bottom(18px)
+	@include margin-left(570px)
+.pagination span
+	@include background(#fff)
+	@include padding(0px 5px)
+	@include border-radius(50%)
+	@include cursor(pointer)
+	@include margin-left(5px)
+	@include color(#fff)
+.pagination span:hover, .pagination span.active
+	@include background(#A4A4A4)
+	@include color(#A4A4A4)
+.left
+	@include position(relative)
+	@include font-size(80px)
+	@include top(160px)
+	@include margin-left(95%)
+	@include color(#fff)
+	@include cursor(pointer)
+.right
+	@include position(relative)
+	@include top(160px)
+	@include font-size(80px)
+	@include color(#fff)
+	@include cursor(pointer)
+@media (max-width: $responsiveBis)
+	.container
+		@include flex-direction(column)
+	.col-sm-1
+		@include float(left)
+		@include width(8.33%)
+		@include background-color(#BDBDBD)
+	.col-sm-2
+		@include float(left)
+		@include width(16.33%)
+		@include background-color(#BDBDBD)
+	.col-sm-3
+		@include float(left)
+		@include width(25%)
+		@include background-color(#BDBDBD)
+	.col-sm-4
+		@include float(left)
+		@include width(33.33%)
+		@include background-color(#BDBDBD)
+	.col-sm-5
+		@include float(left)
+		@include width(43.83%)
+		@include background-color(#BDBDBD)
+	.col-sm-6
+		@include float(left)
+		@include width(50%)
+		@include background-color(#BDBDBD)
+	.col-sm-7
+		@include float(left)
+		@include width(56.17%)
+		@include background-color(#BDBDBD)
+	.col-sm-8
+		@include float(left)
+		@include width(66.66%)
+		@include background-color(#BDBDBD)
+	.col-sm-9
+		@include float(left)
+		@include width(75%)
+		@include background-color(#BDBDBD)
+	.col-sm-10
+		@include float(left)
+		@include width(83.67%)
+		@include background-color(#BDBDBD)
+	.col-sm-11
+		@include float(left)
+		@include width(91.67%)
+		@include background-color(#BDBDBD)
+	.col-sm-12
+		@include float(left)
+		@include width(100%)
+		@include background-color(#BDBDBD)
+	.col-sm-offset-1
+		@include margin-left(8.33%)
+	.col-sm-offset-2
+		@include margin-left(16.33%)
+	.col-sm-offset-3
+		@include margin-left(25%)
+	.col-sm-offset-4
+		@include margin-left(33.33%)
+	.col-sm-offset-5
+		@include width(43.83%)
+	.col-sm-offset-6
+		@include margin-left(50%)
+	.col-sm-offset-7
+		@include margin-left(56.17%)
+	.col-sm-offset-8
+		@include margin-left(66.66%)
+	.col-sm-offset-9
+		@include margin-left(75%)
+	.col-sm-offset-10
+		@include margin-left(83.67%)
+	.col-sm-offset-11
+		@include margin-left(91.67%)
+	.col-sm-offset-12
+		@include margin-left(100%)
+	.menu
+		@include flex-direction(column)
+		@include display(none)
+	.button
+		@include display(block)
+		@include margin-left(20px)
+		@include display(flex)
+		@include background-color(#2E2E2E)
+		@include color(#fff)
+		@include border-radius(20px)
+		@include border(1px solid #fff)
+		@include padding-top(2px)
+		@include padding-bottom(2px)
+		@include cursor(pointer)
+	.buttonBlue
+		@include display(block)
+		@include margin-left(20px)
+		@include display(flex)
+		@include background-color(#0040FF)
+		@include color(#fff)
+		@include border-radius(20px)
+		@include border(1px solid #fff)
+		@include padding-top(2px)
+		@include padding-bottom(2px)
+		@include cursor(pointer)
+	.buttonRed
+		@include display(block)
+		@include margin-left(20px)
+		@include display(flex)
+		@include background-color(#FF0000)
+		@include color(#fff)
+		@include border-radius(20px)
+		@include border(1px solid #fff)
+		@include padding-top(2px)
+		@include padding-bottom(2px)
+		@include cursor(pointer)
+	.buttonPurple
+		@include display(block)
+		@include margin-left(20px)
+		@include display(flex)
+		@include background-color(#642EFE)
+		@include color(#fff)
+		@include border-radius(20px)
+		@include border(1px solid #fff)
+		@include padding-top(2px)
+		@include padding-bottom(2px)
+		@include cursor(pointer)
+
+	.buttondropdownDefault
+		@include display(block)
+		@include margin-left(20px)
+		@include display(flex)
+		@include background-color(#2E2E2E)
+		@include color(#fff)
+		@include border-radius(20px)
+		@include border(1px solid #fff)
+		@include padding-top(2px)
+		@include padding-bottom(2px)
+		@include cursor(pointer)
+	.buttondropdownBlue
+		@include display(block)
+		@include margin-left(20px)
+		@include display(flex)
+		@include background-color(#0040FF)
+		@include color(#fff)
+		@include border-radius(20px)
+		@include border(1px solid #fff)
+		@include padding-top(2px)
+		@include padding-bottom(2px)
+		@include cursor(pointer)
+	.buttondropdownRed
+		@include display(block)
+		@include margin-left(20px)
+		@include display(flex)
+		@include background-color(#FF0000)
+		@include color(#fff)
+		@include border-radius(20px)
+		@include border(1px solid #fff)
+		@include padding-top(2px)
+		@include padding-bottom(2px)
+		@include cursor(pointer)
+	.buttondropdownPurple
+		@include display(block)
+		@include margin-left(20px)
+		@include display(flex)
+		@include background-color(#642EFE)
+		@include color(#fff)
+		@include border-radius(20px)
+		@include border(1px solid #fff)
+		@include padding-top(2px)
+		@include padding-bottom(2px)
+		@include cursor(pointer)
+	.search
+		@include margin-left(40px)
+	.selecteur
+		@include margin-left(30px)
+	.title
+		@include display(none)
+	.title-img
+		@include display(none)
+	.tab-pane
+		@include width(70%)	
+@media (max-width: $responsive)
+	.container
+		@include flex-direction(column)
+		@include width(100%)
+	.col-xs-1
+		@include float(left)
+		@include width(8.33%)
+		@include background-color(#BDBDBD)
+	.col-xs-2
+		@include float(left)
+		@include width(16.33%)
+		@include background-color(#BDBDBD)
+	.col-xs-3
+		@include float(left)
+		@include width(25%)
+		@include background-color(#BDBDBD)
+	.col-xs-4
+		@include float(left)
+		@include width(33.33%)
+		@include background-color(#BDBDBD)
+	.col-xs-5
+		@include float(left)
+		@include width(43.83%)
+		@include background-color(#BDBDBD)
+	.col-xs-6
+		@include float(left)
+		@include width(50%)
+		@include background-color(#BDBDBD)
+	.col-xs-7
+		@include float(left)
+		@include width(56.17%)
+		@include background-color(#BDBDBD)
+	.col-xs-8
+		@include float(left)
+		@include width(66.66%)
+		@include background-color(#BDBDBD)
+	.col-xs-9
+		@include float(left)
+		@include width(75%)
+		@include background-color(#BDBDBD)
+	.col-xs-10
+		@include float(left)
+		@include width(83.67%)
+		@include background-color(#BDBDBD)
+	.col-xs-11
+		@include float(left)
+		@include width(91.67%)
+		@include background-color(#BDBDBD)
+	.col-xs-12
+		@include float(left)
+		@include width(100%)
+		@include background-color(#BDBDBD)
+	.col-xs-offset-1
+		@include margin-left(8.33%)
+	.col-xs-offset-2
+		@include margin-left(16.33%)
+	.col-xs-offset-3
+		@include margin-left(25%)
+	.col-xs-offset-4
+		@include margin-left(33.33%)
+	.col-xs-offset-5
+		@include width(43.83%)
+	.col-xs-offset-6
+		@include margin-left(50%)
+	.col-xs-offset-7
+		@include margin-left(56.17%)
+	.col-xs-offset-8
+		@include margin-left(66.66%)
+	.col-xs-offset-9
+		@include margin-left(75%)
+	.col-xs-offset-10
+		@include margin-left(83.67%)
+	.col-xs-offset-11
+		@include margin-left(91.67%)
+	.col-xs-offset-12
+		@include margin-left(100%)
+	.tab-pane
+		@include width(80%)	
